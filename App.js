@@ -1,6 +1,7 @@
+import React from 'react';
 import { StatusBar } from 'expo-status-bar';
+
 import { ProgressViewIOSComponent, StyleSheet, Text, View } from 'react-native';
-// import Food from './components/Food'
 import FootBar from './components/FootBar'
 
 export default function App() {
@@ -19,6 +20,7 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
+
   container: {
     flex: 1,
     backgroundColor: 'pink',
@@ -35,4 +37,9 @@ const styles = StyleSheet.create({
   items:{
     position: 'absolute', left: 0, right: 0, bottom: 0
   },
+
+  items: {
+    marginTop: 30,
+  },
+
 });
