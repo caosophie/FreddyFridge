@@ -1,23 +1,21 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import { computeWindowedRenderLimits } from 'react-native/Libraries/Lists/VirtualizeUtils';
-import { parseComponentStack } from 'react-native/Libraries/LogBox/Data/parseLogBoxLog';
-import Fact from './components/quickFacts.js';
 
+import { ProgressViewIOSComponent, StyleSheet, Text, View } from 'react-native';
+import FootBar from './components/FootBar'
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-
-      <View style={styles.items}>
-          {/* This is where the tasks will go! */}
-          <Fact Title={"Did you know?"} /> 
+      <View style = {styles.tasksWrapper}>
+        <Text style = {styles.sectionTitle}> Today's tasks</Text>
       </View>
 
+      <View style= {styles.items}>
+          <FootBar text={'helllo'}/>
+      </View>
     </View>
+    
   );
 }
 
@@ -25,9 +23,19 @@ const styles = StyleSheet.create({
 
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: 'pink',
+
+  },
+  tasksWrapper:{
+    paddingTop:80,
+    paddingHorizontal:20,
+  },
+  sectionTitle:{
+    fontSize:24,
+    fontWeight:'bold'
+  },
+  items:{
+    position: 'absolute', left: 0, right: 0, bottom: 0
   },
 
   items: {
