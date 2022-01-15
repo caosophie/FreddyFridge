@@ -25,7 +25,7 @@ export default function App() {
 
     {/* FAQ */}
     <View style={styles.faqView}>
-        <Fact Title={"Did you know?"} Message={"Food solves hunger"} /> 
+        <Fact Title={"Did you know?"} Message={"Packaged bread lasts for 5 to 7 days after the printed date in the pantry...and up to 6 months when stored in the freezer!"} /> 
     </View>
 
     {/* fridge */}
