@@ -3,6 +3,7 @@ import { StatusBar } from 'expo-status-bar';
 
 import { ProgressViewIOSComponent, StyleSheet, Text, View } from 'react-native';
 import FootBar from './components/FootBar'
+import FoodContainer from './components/foodContainer';
 
 export default function App() {
   return (
@@ -10,12 +11,13 @@ export default function App() {
       <View style = {styles.tasksWrapper}>
         <Text style = {styles.sectionTitle}> Today's tasks</Text>
       </View>
-
+      <View styles={styles.foodContainer}>
+        <FoodContainer foodName={'cheese'} foodWeight={'200'} foodExpiry={'3'} foodPurchaseDate={'01/23/24'}/>
+      </View>
       <View style= {styles.items}>
           <FootBar text={'helllo'}/>
       </View>
     </View>
-    
   );
 }
 
@@ -24,6 +26,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: 'pink',
+    padding: 10,
 
   },
   tasksWrapper:{
@@ -37,9 +40,9 @@ const styles = StyleSheet.create({
   items:{
     position: 'absolute', left: 0, right: 0, bottom: 0
   },
-
-  items: {
-    marginTop: 30,
+  foodContainer:{
+    margin: 20,
   },
+
 
 });
