@@ -2,6 +2,7 @@ import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { ProgressViewIOSComponent, StyleSheet, Text, View } from 'react-native';
 import FootBar from './components/FootBar'
+import NavBar from './components/NavBar'
 import Fact from './components/quickFacts.js'
 import { SafeAreaView } from 'react-native';
 import { Nunito_400Medium } from '@expo-google-fonts/nunito';
@@ -14,6 +15,7 @@ export default function App() {
     <View style={styles.taskbar}>
 
     </View>
+    <NavBar style= {styles.navBar}/>
 
     {/* reminders */}
     <View style={styles.remindersView}>
@@ -31,7 +33,7 @@ export default function App() {
     </View>
 
     <View style= {styles.footbar}>
-        <FootBar text={'helllo'}/>
+        <FootBar />
     </View>
   </SafeAreaView>
     
@@ -41,11 +43,14 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#E5E5E5",
-
+    backgroundColor: '#E5E5E5',
+    // paddingTop:40
+  },
+  navBar:{
+    // marginTop:100
   },
   tasksWrapper:{
-    paddingTop:80,
+    paddingTop:20,
     paddingHorizontal:20,
   },
   sectionTitle:{
@@ -70,7 +75,10 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     marginBottom: 5
   },
-  footbar:{
-    position: 'absolute', left: 0, right: 0, bottom: 0
+  footBar:{
+    position: 'absolute',
+    left: 0, 
+    right: 0, 
+    bottom: 0
   },
 });
