@@ -14,6 +14,11 @@ export default function App() {
       <View style= {styles.items}>
           <FootBar text={'helllo'}/>
       </View>
+
+      <View style={styles.items}>
+          {/* This is where the tasks will go! */}
+          <Fact Title={"Did you know?"} /> 
+      </View>
     </View>
     
   );
