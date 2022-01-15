@@ -30,8 +30,9 @@ export default function App() {
 
     {/* fridge */}
     <View style={styles.fridgeView}>
+      <Text style={styles.title}>meat and poultry</Text>
       <View styles={styles.foodContainer}>
-        <FoodContainer foodName={'cheese'} foodWeight={'200'} foodExpiry={'3'} foodPurchaseDate={'01/23/24'}/>
+          <FoodContainer foodName={'cheese'} foodWeight={'200'} foodExpiry={'3'} foodPurchaseDate={'01/23/24'}/>
       </View>
     </View>
 
@@ -47,6 +48,11 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#E5E5E5',
     // paddingTop:40
+    fontFamily: Nunito_400Medium,
+  },
+  title: {
+    fontSize: 20,
+    marginBottom: 10,
   },
   navBar:{
     // marginTop:100
@@ -78,7 +84,8 @@ const styles = StyleSheet.create({
   fridgeView: {
     height: 400,
     backgroundColor: "white",
-    marginBottom: 5
+    marginBottom: 5,
+    padding: 10,
   },
   footBar:{
     position: 'absolute',

@@ -28,32 +28,35 @@ const styles = StyleSheet.create({
     foodContainer: {
         borderRadius: 10,
         backgroundColor: '#E5E5E5',
-        padding: 10,
         width: 370,
-        height: 60,
+        height: 80,
+        padding: 10,
         flexDirection: 'row',
         alignItems: 'center',
-        //justifyContent: 'space-between',
-        //flexWrap: 'wrap',
     },
 
     image:{
-        height: 32,
-        width: 32,
+        height: 50,
+        width: 50,
+        marginLeft: 10,
     },
 
+    
     foodBoxRight: {
         paddingTop: 3,
         flexDirection: 'column',
-        alignItems: 'center',
-        marginLeft: 80,
+        alignItems: 'flex-end',
+        marginLeft: 55,
     },
 
     foodNameContainer: {
         borderRadius: 10,
         backgroundColor: '#192916',
         alignItems: 'center',
-        width: 50,
+        width: 80,
+        height: 30,
+        justifyContent: 'center',
+        marginTop: 15,
     },
 
     foodPurchaseDate: {
@@ -61,19 +64,23 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         fontSize: 11,
         margin: 3,
-
     },
 
     foodWeight: {
         color: '#192916',
-        fontSize: 11,
+        fontSize: 14,
     },
 
     foodWeightContainer: {
         alignItems: 'center',
         borderRadius: 10,
-        width: 100,
+        width: 125,
+        height: 30,
+        marginTop: 15,
         backgroundColor: '#FFF',
+        borderColor: '#3E8F30',
+        borderWidth: 1,
+        justifyContent: 'center',
     },
 
     foodBoxLeft: {
@@ -86,7 +93,7 @@ const styles = StyleSheet.create({
 
     foodItemName: {
         color: '#FFF',
-        fontSize: 11,
+        fontSize: 14,
     },
 
     foodExpiryText: {
@@ -97,7 +104,7 @@ const styles = StyleSheet.create({
 
     line: {
         marginLeft: 10, 
-        height: '100%',
+        height: '70%',
         width: 1,
         backgroundColor: '#909090',
         justifyContent: 'flex-start',
