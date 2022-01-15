@@ -1,5 +1,9 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { Dimensions } from "react-native";
+
+var width = Dimensions.get('window').width;
+var height = Dimensions.get('window').height
 
 const Fact = (props) => {
 
@@ -21,13 +25,12 @@ const styles = StyleSheet.create({
   item: {
     borderColor: 'white',
     borderColor: 'lightgrey',
-    borderRadius: 10,
-    width: 360,
+    backgroundColor: 'white',
+    width: width,
     height: 90,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    marginBottom: 20,
   },
   itemLeft: {
     padding: 10,
