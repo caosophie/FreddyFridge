@@ -3,6 +3,7 @@ import { StatusBar } from 'expo-status-bar';
 
 import { ProgressViewIOSComponent, StyleSheet, Text, View } from 'react-native';
 import FootBar from './components/FootBar'
+import Fact from './components/quickFacts.js'
 
 export default function App() {
   return (
@@ -11,13 +12,13 @@ export default function App() {
         <Text style = {styles.sectionTitle}> Today's tasks</Text>
       </View>
 
-      <View style= {styles.items}>
-          <FootBar text={'helllo'}/>
-      </View>
-
       <View style={styles.items}>
           {/* This is where the tasks will go! */}
           <Fact Title={"Did you know?"} /> 
+      </View>
+
+      <View style= {styles.items}>
+          <FootBar text={'helllo'}/>
       </View>
     </View>
     
