@@ -35,7 +35,7 @@ export default function App() {
       </View>
     </View>
 
-    <View style= {styles.footbar}>
+    <View style= {styles.footBar}>
         <FootBar />
     </View>
   </SafeAreaView>
