@@ -14,9 +14,8 @@ export default function App() {
     <SafeAreaView style={styles.container}>
     {/*taskbar*/}
     <View style={styles.taskbar}>
-
+      <NavBar style= {styles.navBar}/>
     </View>
-    <NavBar style= {styles.navBar}/>
 
     {/* reminders */}
     <View style={styles.remindersView}>
@@ -31,6 +30,12 @@ export default function App() {
     {/* fridge */}
     <View style={styles.fridgeView}>
       <Text style={styles.title}>meat and poultry</Text>
+      <View styles={styles.foodContainer}>
+          <FoodContainer foodName={'cheese'} foodWeight={'200'} foodExpiry={'3'} foodPurchaseDate={'01/23/24'}/>
+      </View>
+      <View styles={styles.foodContainer}>
+          <FoodContainer foodName={'cheese'} foodWeight={'200'} foodExpiry={'3'} foodPurchaseDate={'01/23/24'}/>
+      </View>
       <View styles={styles.foodContainer}>
           <FoodContainer foodName={'cheese'} foodWeight={'200'} foodExpiry={'3'} foodPurchaseDate={'01/23/24'}/>
       </View>
