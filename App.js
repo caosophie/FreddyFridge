@@ -25,7 +25,7 @@ export default function App() {
 
     {/* FAQ */}
     <View style={styles.faqView}>
-        <Fact Title={"Did you know?"} /> 
+        <Fact Title={"Did you know?"} Message={"Food solves hunger"} /> 
     </View>
 
     {/* fridge */}

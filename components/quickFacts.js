@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
 import { Dimensions } from "react-native";
 
 var width = Dimensions.get('window').width;
@@ -11,11 +11,12 @@ const Fact = (props) => {
     <View style={styles.item}>
         <View style={styles.itemLeft}>
             <View style={styles.square}>
-                
+                <Image style={styles.icon} source = {require('../assets/QuestionIcon.png')} />
             </View>
         </View>
         <View style={styles.background}>
             <Text style={styles.itemTitle}>{props.Title}</Text>
+            <Text style={styles.itemMessage}>{props.Message}</Text>
         </View>
     </View>
   )
@@ -38,11 +39,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     flexWrap: 'wrap'
   },
+   icon: {
+    width: 24,
+    height: 24,
+  },
   square: {
     width: 24,
     height: 24,
-    backgroundColor: '#55BCF6',
-    opacity: 0.4,
+    opacity: 1,
     borderRadius: 5,
     marginLeft: 5,
   },
@@ -50,6 +54,12 @@ const styles = StyleSheet.create({
     maxWidth: '80%',
     fontSize: 10,
     fontWeight: 'bold',
+    color: "white",
+    marginBottom: 10,
+  },
+  itemMessage: {
+    maxWidth: '80%',
+    fontSize: 10,
     color: "white",
   },
   background: {
