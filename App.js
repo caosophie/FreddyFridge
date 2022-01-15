@@ -2,6 +2,7 @@ import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { ProgressViewIOSComponent, StyleSheet, Text, View } from 'react-native';
 import FootBar from './components/FootBar'
+import FoodContainer from './components/foodContainer';
 import NavBar from './components/NavBar'
 import Fact from './components/quickFacts.js'
 import { SafeAreaView } from 'react-native';
@@ -29,14 +30,15 @@ export default function App() {
 
     {/* fridge */}
     <View style={styles.fridgeView}>
-      
+      <View styles={styles.foodContainer}>
+        <FoodContainer foodName={'cheese'} foodWeight={'200'} foodExpiry={'3'} foodPurchaseDate={'01/23/24'}/>
+      </View>
     </View>
 
     <View style= {styles.footbar}>
         <FootBar />
     </View>
   </SafeAreaView>
-    
   );
 }
 
@@ -61,6 +63,9 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     height: 70,
     marginBottom: 5,
+  },
+  foodContainer:{
+    margin: 20,
   },
   remindersView:{
     height: 200,
