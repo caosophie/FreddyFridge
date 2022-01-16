@@ -4,7 +4,7 @@ import { SafeAreaView, View, Text, StyleSheet, Image, Systrace} from 'react-nati
 const foodContainer = (props) => {
     const images = {
         logos: {
-          cheese: require('../assets/cheese.png'),
+          cheese: require('../assets/Cheese.png'),
           pepper: require('../assets/pepper.png'),
           tomato: require('../assets/tomato.png'),
           chocolate: require('../assets/chocolate.png'),

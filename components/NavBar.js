@@ -15,8 +15,8 @@ const NavBar = (props) => {
             <View style={styles.foodNameContainerWhite}>
                     <Text style={styles.foodItemNameBlack}>fridge</Text>
             </View>
-            <View style={styles.foodNameContainer}>
-                    <Text style={styles.foodItemName}>reminders</Text>
+            <View style={styles.foodNameContainerWhite}>
+                    <Text style={styles.foodItemNameBlack}>reminders</Text>
             </View>
 
         </SafeAreaView>
