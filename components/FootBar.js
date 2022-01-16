@@ -24,7 +24,9 @@ const styles = StyleSheet.create({
     },
     image:{
         flex: 1,
-        aspectRatio: 2.5, 
+        // aspectRatio: 2.5, 
+        height:40,
+    
         resizeMode: 'contain',
     },
 
