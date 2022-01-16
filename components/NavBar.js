@@ -8,41 +8,88 @@ const NavBar = (props) => {
     
     return(
         <SafeAreaView style={styles.item}>
-            <TouchableOpacity style={styles.rectangle}><Text style= {styles.word} >Hello</Text></TouchableOpacity>
-            <TouchableOpacity style={styles.rectangle}></TouchableOpacity>
-            <TouchableOpacity style={styles.rectangle}></TouchableOpacity>
+
+            <View style={styles.foodNameContainer}>
+                    <Text style={styles.foodItemName}>home</Text>
+            </View>
+            <View style={styles.foodNameContainerWhite}>
+                    <Text style={styles.foodItemNameBlack}>fridge</Text>
+            </View>
+            <View style={styles.foodNameContainer}>
+                    <Text style={styles.foodItemName}>reminders</Text>
+            </View>
+
         </SafeAreaView>
     )
 }
 
 const styles = StyleSheet.create({
     item:{
-        // backgroundColor:'blue',
-        // padding: 0,
-        marginTop:20,
+        backgroundColor:'#FFF',
+        // padding: 10,
+        // marginTop:10,
+        // paddingBottom:100,
         flexDirection:'row',
         alignItems:'center',
         justifyContent:'space-evenly',
         
 
     },
-    word:{
-        color:'white'
+    // word:{
+    //     color:'white'
+    // },
+    // rectangle:{
+    //     width:80,
+    //     height:30,
+    //     borderRadius:100,
+    //     backgroundColor:'blue',
+
+
+    // },
+
+    foodNameContainer: {
+        borderRadius: 10,
+        backgroundColor: '#192916',
+        alignItems: 'center',
+        width: 80,
+        height: 30,
+        justifyContent: 'center',
+        marginTop: 15,
+        marginBottom:15,
+
+        // border-color: '#192916',
     },
-    rectangle:{
-        width:80,
-        height:30,
-        borderRadius:100,
-        backgroundColor:'blue',
+    foodItemName: {
+        color: '#FFF',
+        fontSize: 14,
+    },
+
+    foodNameContainerWhite: {
+
+        borderColor:'#192916',
+        borderRadius: 10,
+        borderWidth: 1,
+        backgroundColor: '#FFF',
+        alignItems: 'center',
+        width: 80,
+        height: 30,
+        justifyContent: 'center',
+        marginTop: 15,
+        marginBottom:15,
 
 
     },
 
-    image:{
-        flex: 1,
-        aspectRatio: 2.5, 
-        resizeMode: 'contain',
+    foodItemNameBlack: {
+        color: '#192916',
+        fontSize: 14,
     },
+
+    // image:{
+    //     flex: 1,
+    //     aspectRatio: 2.5, 
+    //     resizeMode: 'contain',
+    // },
 
 });
 
