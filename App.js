@@ -12,38 +12,38 @@ import { backgroundColor } from 'react-native/Libraries/Components/View/ReactNat
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
+
     {/*taskbar*/}
-    <View style={styles.taskbar}>
-      <NavBar style= {styles.navBar}/>
-    </View>
-
-    {/* reminders */}
-    <View style={styles.remindersView}>
-
-    </View>
-
-    {/* FAQ */}
-    <View style={styles.faqView}>
-        <Fact Title={"Did you know?"} Message={"Packaged bread lasts for 5 to 7 days after the printed date in the pantry...and up to 6 months when stored in the freezer!"} /> 
-    </View>
-
-    {/* fridge */}
-    <View style={styles.fridgeView}>
-      <Text style={styles.title}>meat and poultry</Text>
-      <View styles={styles.foodContainer}>
-          <FoodContainer foodName={'tomato'} foodWeight={'200'} foodExpiry={'3'} foodPurchaseDate={'01/23/24'}/>
+      <View style={styles.taskbar}>
+        <NavBar style= {styles.navBar}/>
       </View>
-      <View styles={styles.foodContainer}>
-          <FoodContainer foodName={'cheese'} foodWeight={'200'} foodExpiry={'3'} foodPurchaseDate={'01/23/24'}/>
-      </View>
-      <View styles={styles.foodContainer}>
-          <FoodContainer foodName={'cheese'} foodWeight={'200'} foodExpiry={'3'} foodPurchaseDate={'01/23/24'}/>
-      </View>
-    </View>
 
-    <View style= {styles.footBar}>
-        <FootBar />
-    </View>
+
+      {/* FAQ */}
+      <View style={styles.faqView}>
+          <Fact Title={"Did you know?"} Message={"Packaged bread lasts for 5 to 7 days after the printed date in the pantry...and up to 6 months when stored in the freezer!"} /> 
+      </View>
+
+        {/* fridge */}
+        <View style={styles.fridgeView}>
+          <Text style={styles.title}>meat and poultry</Text>
+          <View styles={styles.foodContainer}>
+              <FoodContainer foodName={'cheese'} foodWeight={'200'} foodExpiry={'3'} foodPurchaseDate={'01/23/24'}/>
+          </View>
+        </View>
+      <View>
+        <View styles={styles.foodContainer}>
+            <FoodContainer foodName={'cheese'} foodWeight={'200'} foodExpiry={'3'} foodPurchaseDate={'01/23/24'}/>
+        </View>
+        <View styles={styles.foodContainer}>
+            <FoodContainer foodName={'cheese'} foodWeight={'200'} foodExpiry={'3'} foodPurchaseDate={'01/23/24'}/>
+        </View>
+      </View>
+
+
+        <View style= {styles.footBar}>
+            <FootBar />
+        </View>
   </SafeAreaView>
   );
 }
@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
   },
   taskbar:{
     backgroundColor: 'white',
-    height: 70,
+    // height: 70,
     marginBottom: 5,
   },
   foodContainer:{
