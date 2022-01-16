@@ -24,7 +24,6 @@ export default function App() {
           <Fact Title={"Did you know?"} Message={"Packaged bread lasts for 5 to 7 days after the printed date in the pantry...and up to 6 months when stored in the freezer!"} /> 
       </View>
 
-
         {/* fridge */}
         <View style={styles.fridgeView}>
           <Text style={styles.title}>meat and poultry</Text>
@@ -32,7 +31,6 @@ export default function App() {
               <FoodContainer foodName={'cheese'} foodWeight={'200'} foodExpiry={'3'} foodPurchaseDate={'01/23/24'}/>
           </View>
         </View>
-        
       <View>
         <View styles={styles.foodContainer}>
             <FoodContainer foodName={'cheese'} foodWeight={'200'} foodExpiry={'3'} foodPurchaseDate={'01/23/24'}/>
