@@ -31,7 +31,7 @@ export default function App() {
     <View style={styles.fridgeView}>
       <Text style={styles.title}>meat and poultry</Text>
       <View styles={styles.foodContainer}>
-          <FoodContainer foodName={'cheese'} foodWeight={'200'} foodExpiry={'3'} foodPurchaseDate={'01/23/24'}/>
+          <FoodContainer foodName={'tomato'} foodWeight={'200'} foodExpiry={'3'} foodPurchaseDate={'01/23/24'}/>
       </View>
       <View styles={styles.foodContainer}>
           <FoodContainer foodName={'cheese'} foodWeight={'200'} foodExpiry={'3'} foodPurchaseDate={'01/23/24'}/>

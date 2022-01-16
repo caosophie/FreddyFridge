@@ -2,9 +2,34 @@ import React from 'react';
 import { SafeAreaView, View, Text, StyleSheet, Image, Systrace} from 'react-native';
 
 const foodContainer = (props) => {
+    const images = {
+        logos: {
+          cheese: require('../assets/cheese.png'),
+          pepper: require('../assets/pepper.png'),
+          tomato: require('../assets/tomato.png'),
+          chocolate: require('../assets/chocolate.png'),
+          eggs: require('../assets/eggs.png'),
+        }
+      };
+
+      imageSelect = network => {
+        if (network === null) {
+          return images.logos.cheese;
+        }
+      
+        const networkArray = {
+          'cheese': images.logos.cheese,
+          'pepper': images.logos.pepper,
+          'tomato': images.logos.tomato,
+          'chocolate': images.logos.chocolate,
+          'eggs': images.logos.eggs,
+        };
+      
+        return networkArray[network];
+      };
     return (
         <SafeAreaView style={styles.foodContainer}>
-            <Image style={styles.image} source = {require('../assets/Cheese.png')} />
+            <Image style={styles.image} source = {this.imageSelect(props.foodName)} />
             <View style={styles.line} />
             <View style={styles.foodBoxLeft}>
                 <View style={styles.foodNameContainer}>
