@@ -14,37 +14,38 @@ export default function App() {
     <SafeAreaView style={styles.container}>
 
     {/*taskbar*/}
-    <View style={styles.taskbar}>
-      <NavBar style= {styles.navBar}/>
-    </View>
+      <View style={styles.taskbar}>
+        <NavBar style= {styles.navBar}/>
+      </View>
 
 
-    {/* FAQ */}
-    <View style={styles.faqView}>
-        <Fact Title={"Did you know?"} Message={"Packaged bread lasts for 5 to 7 days after the printed date in the pantry...and up to 6 months when stored in the freezer!"} /> 
-    </View>
+      {/* FAQ */}
+      <View style={styles.faqView}>
+          <Fact Title={"Did you know?"} Message={"Packaged bread lasts for 5 to 7 days after the printed date in the pantry...and up to 6 months when stored in the freezer!"} /> 
+      </View>
 
 
-      {/* fridge */}
-      <View style={styles.fridgeView}>
-        <Text style={styles.title}>meat and poultry</Text>
+        {/* fridge */}
+        <View style={styles.fridgeView}>
+          <Text style={styles.title}>meat and poultry</Text>
+          <View styles={styles.foodContainer}>
+              <FoodContainer foodName={'cheese'} foodWeight={'200'} foodExpiry={'3'} foodPurchaseDate={'01/23/24'}/>
+          </View>
+        </View>
+        
+      <View>
+        <View styles={styles.foodContainer}>
+            <FoodContainer foodName={'cheese'} foodWeight={'200'} foodExpiry={'3'} foodPurchaseDate={'01/23/24'}/>
+        </View>
         <View styles={styles.foodContainer}>
             <FoodContainer foodName={'cheese'} foodWeight={'200'} foodExpiry={'3'} foodPurchaseDate={'01/23/24'}/>
         </View>
       </View>
 
-      <View styles={styles.foodContainer}>
-          <FoodContainer foodName={'cheese'} foodWeight={'200'} foodExpiry={'3'} foodPurchaseDate={'01/23/24'}/>
-      </View>
-      <View styles={styles.foodContainer}>
-          <FoodContainer foodName={'cheese'} foodWeight={'200'} foodExpiry={'3'} foodPurchaseDate={'01/23/24'}/>
-      </View>
-    </View>
 
-
-      <View style= {styles.footBar}>
-          <FootBar />
-      </View>
+        <View style= {styles.footBar}>
+            <FootBar />
+        </View>
   </SafeAreaView>
   );
 }
