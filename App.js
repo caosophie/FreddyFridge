@@ -15,6 +15,7 @@ export default function App() {
     <SafeAreaView style={styles.container}>
       
     {/*taskbar*/}
+
     <View style={styles.taskbar}>
       <NavBar style= {styles.navBar}/>
     </View>
@@ -26,20 +27,15 @@ export default function App() {
     </View>
 
 
-      {/* fridge */}
-      <View style={styles.fridgeView}>
-        <Text style={styles.title}>meat and poultry</Text>
-        <View styles={styles.foodContainer}>
-            <FoodContainer foodName={'cheese'} foodWeight={'200'} foodExpiry={'3'} foodPurchaseDate={'01/23/24'}/>
+
+        {/* fridge */}
+        <View style={styles.fridgeView}>
+          <Text style={styles.title}>meat and poultry</Text>
+          <View styles={styles.foodContainer}>
+              <FoodContainer foodName={'cheese'} foodWeight={'200'} foodExpiry={'3'} foodPurchaseDate={'01/23/24'}/>
+          </View>
         </View>
-      </View>
-      <View style={styles.fruitsContainer}>
-        <View styles={styles.foodContainer}>
-            <FoodContainer foodName={'cheese'} foodWeight={'200'} foodExpiry={'3'} foodPurchaseDate={'01/23/24'}/>
-        </View>
-        <View styles={styles.foodContainer}>
-            <FoodContainer foodName={'cheese'} foodWeight={'200'} foodExpiry={'3'} foodPurchaseDate={'01/23/24'}/>
-        </View>
+      <View>
         <View styles={styles.foodContainer}>
             <FoodContainer foodName={'cheese'} foodWeight={'200'} foodExpiry={'3'} foodPurchaseDate={'01/23/24'}/>
         </View>
@@ -48,10 +44,21 @@ export default function App() {
         </View>
       </View>
 
+      <View style={styles.fruitsContainer}>
+        <View styles={styles.foodContainer}>
+            <FoodContainer foodName={'cheese'} foodWeight={'200'} foodExpiry={'3'} foodPurchaseDate={'01/23/24'}/>
+        </View>
+        <View styles={styles.foodContainer}>
+            <FoodContainer foodName={'cheese'} foodWeight={'200'} foodExpiry={'3'} foodPurchaseDate={'01/23/24'}/>
+        
+      </View>
+
     </ScrollView>
       <View style= {styles.footBar}>
           <FootBar />
       </View>
+
+
   </SafeAreaView>
   );
 }
