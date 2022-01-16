@@ -19,9 +19,9 @@ export default function App() {
       
 
       {/* reminders */}
-      <View style={styles.remindersView}>
+      {/* <View style={styles.remindersView}>
 
-      </View>
+      </View> */}
 
       {/* FAQ */}
       <View style={styles.faqView}>
